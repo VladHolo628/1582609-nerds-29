@@ -45,6 +45,7 @@ img {
   font: inherit;
   vertical-align: middle;
   border: none;
+  font-weight: 500;
 }
 
 .button:hover,
@@ -58,6 +59,7 @@ img {
 
 .contacts-button {
   background-color: var(--red);
+  font-weight: 500;
 }
 
 .contacts-button:hover,
@@ -123,6 +125,7 @@ img {
 .main-features {
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 }
 .add-features {
   font-size: 16px;
@@ -141,6 +144,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .services-list li {
   list-style-type: none;
@@ -192,11 +196,13 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 .statistics h2 {
   font-size: 45px;
   line-height: 64px;
   color: var(--basic-black);
+  font-weight: bold;
 }
 .statistics-list li {
   list-style-type: none;
