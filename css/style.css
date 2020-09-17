@@ -1,0 +1,240 @@
+:root {
+  --basic-black: #000000;
+  --lighten-black: #283136;
+  --red: #FB565A;
+  --darken-red: #E74246;
+  --extra-darken-red: #D7373B;
+  --green: #00CA74;
+  --yellow: #EFC849;
+  --lighten-grey: #888888;
+  --darken-white: #EEEEEE;
+  --basic-white: #FFFFFF;
+  --dark-grey: #444444;
+  --basic-grey: #666666;
+}
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*Button*/
+
+.button {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  text-align: center;
+  font: inherit;
+  vertical-align: middle;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--darken-red);
+}
+
+.button:active {
+  background-color: var(--extra-darken-red);
+}
+
+.contacts-button {
+  background-color: var(--red);
+}
+
+.contacts-button:hover,
+.contacts-button:focus {
+  background-color: var(--darken-red);
+}
+
+.contacts-button:active {
+  background-color: var(--extra-darken-red);
+}
+
+
+/*Main header*/
+
+.main-header {
+  background-color: var(--darken-white);
+  background-image: url(/img/Rectangle%205.png);
+}
+
+
+/*Main navigation*/
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--darken-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.basket-link {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket-link:hover,
+.basket-link:focus {
+  color: var(--red);
+}
+
+.site-navigation a:active,
+.basket-link:active {
+  color: var(--lighten-grey);
+}
+
+
+}
+
+/*Features container*/
+.features-wrapper {
+  background-color: var(--darken-white);
+}
+.main-features {
+  font-size: 55px;
+  line-height: 55px;
+}
+.add-features {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--lighten-black);
+}
+.features-link {
+  color: var(--basic-white);
+  background-color: var(--red);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*Services container*/
+.services h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.services-list li {
+  list-style-type: none;
+}
+.services-item,
+{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--lighten-black);
+}
+.services-button1 {
+  background-color: var(--red);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.services-button2 {
+  background-color: var(--green);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.services-button3 {
+  background-color: var(--yellow);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/*About Us*/
+.about-us-p1 {
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+.about-us-p2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--lighten-black);
+}
+.about-us h3 {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+/*Statistics*/
+.statistics h3 {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.statistics h2 {
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+.statistics-list li {
+  list-style-type: none;
+  color: var(--lighten-black);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*Partners*/
+.partners li {
+  list-style-type: none;
+}
+
+/*Contacts*/
+.contacts-tel {
+  color: inherit;
+}
+.contacts p {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.main-footer .contacts-adress {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-grey);
+}
+.container-social li {
+  list-style-type: none;
+}
+.container-social-text h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.container-social-text p {
+  color: var(--dark-grey);
+  font-size: 16px;
+  line-height: 22px;
+}
