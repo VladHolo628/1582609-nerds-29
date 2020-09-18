@@ -51,6 +51,7 @@ img {
   vertical-align: middle;
   border: none;
   font-weight: 500;
+  background-color: var(--red);
 }
 
 .button:hover,
@@ -269,3 +270,61 @@ img {
 }
 
 /*Catalog*/
+
+.sorting-container li{
+  list-style-type: none;
+}
+
+.page-title{
+  font-size: 55px;
+line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cost{
+  font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+  text-transform: uppercase;
+}
+
+.sorting-container p{
+  font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+  text-transform: uppercase;
+}
+
+.sorting-container-link1,
+.sorting-container-link2,
+.sorting-container-link3{
+  font-size: 14px;
+line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.container a{
+ color: var(--basic-black);
+}
+.container li{
+  list-style-type: none;
+}
+
+.paging-container li{
+  color: var(--basic-black);
+  font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+}
+
+.next-button{
+  font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+  text-transform: uppercase;
+}
+
+
+
