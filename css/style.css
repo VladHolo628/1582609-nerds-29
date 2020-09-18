@@ -5,16 +5,21 @@
   --darken-red: #E74246;
   --extra-darken-red: #D7373B;
   --green: #00CA74;
+  --darken-green:#00BC6C;
+  --extra-darken-green: #00AA62;
   --yellow: #EFC849;
+  --darken-yellow:#EAB534;
+  --extra-darken-yellow:#E5A722;
   --lighten-grey: #888888;
   --darken-white: #EEEEEE;
   --basic-white: #FFFFFF;
   --dark-grey: #444444;
   --basic-grey: #666666;
+
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1157px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -160,13 +165,31 @@ img {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
 }
 .services-button2 {
   background-color: var(--green);
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
 }
+.services-button2:hover,
+.services-button2:focus{
+  background-color: var(--darken-green);
+}
+.services-button2:active{
+  background-color: var(--extra-darken-green);
+}
+
+.services-button3:hover,
+.services-button3:focus{
+  background-color: var(--darken-yellow);
+}
+.services-button3:active{
+  background-color: var(--extra-darken-yellow);
+}
+
 .services-button3 {
   background-color: var(--yellow);
   font-size: 16px;
@@ -244,3 +267,5 @@ img {
   font-size: 16px;
   line-height: 22px;
 }
+
+/*Catalog*/
