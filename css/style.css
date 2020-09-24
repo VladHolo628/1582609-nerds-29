@@ -31,6 +31,14 @@ body {
   background-repeat: no-repeat;
 }
 
+
+.main-header {
+  margin-bottom: 70px;
+}
+
+
+
+
 .page a {
   text-decoration: none;
 }
@@ -143,6 +151,7 @@ img {
   background-color: var(--red);
   font-size: 16px;
   line-height: 18px;
+  width: 240px;
 }
 
 /*Services container*/
@@ -332,6 +341,143 @@ font-size: 16px;
 line-height: 18px;
   text-transform: uppercase;
 }
+
+/*Grid*/
+
+.page{
+  height: 100%;
+
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-height: 100%;
+}
+
+.main-navigation{
+  display: grid;
+   grid-template-columns: max-content 1fr min-content;
+  margin-top: 50px;
+}
+
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.features-wrapper{
+  display: grid;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+
+}
+
+.services-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 100px;
+  margin-bottom: 155px;
+  padding-left: 0;
+}
+/*==================================== About Us Grid ===================================*/
+
+.about-us-wrapper{
+   display: grid;
+  grid-template-columns: 651px max-content;
+  grid-template-rows: auto;
+  column-gap: 154px;
+
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-left: 0;
+  vertical-align: bottom;
+}
+.statistics-wrapper{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.statistics{
+  grid-column: 2/3;
+}
+
+.about-us-list{
+  grid-row: 2/3;
+
+}
+
+/*==================================== Partners Grid ===================================*/
+.partners{
+
+  width: 1160px;
+  margin: 0 auto 80px auto;
+  padding: 0 10px;
+}
+.partners-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 95px;
+}
+
+/*==================================== Footer Grid ===================================*/
+
+
+
+.footer-wrapper{
+  display: grid;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+    grid-template-columns: 319px 1fr;
+  grid-template-rows: 416px 1fr;
+  grid-template-areas:
+  "contacts ."
+  "socials promos";
+
+}
+
+.contacts{
+  grid-area: contacts;
+  width: 319px;
+  height: 308px;
+  margin-top: 55px;
+  text-align: center;
+
+}
+.footer-social{
+  grid-area: socials;
+  margin-top: 68px;
+
+}
+.container-social-text{
+  grid-area: promos;
+  margin-top: 75px;
+
+
+
+}
+
+
+
+
+
+
+
 
 
 
