@@ -8,7 +8,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet"> </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
     <div class="main-navigation-wrapper">
       <nav class="main-navigation">
@@ -33,6 +33,7 @@
     </div>
   </header>
     <main>
+    <div class="catalog-wrapper wrapper">
     <section>
    <p class="cost">Стоимость:</p>
 <h2>Фильтр товаров</h2>
@@ -53,10 +54,11 @@
                  </li>
             </ul>
         </section>
-        <section class="container">
+        <section class="catalog-container">
+           <div class="sedona-wrapper">
             <ul>
-               <div class="sedona-wrapper">
-                <li> <img src="img/img-sedona%201.jpg" alt="Sedona" alt="Sedona" width="360" height="576">
+
+                <li class="catalog-item"> <img src="img/img-sedona%201.jpg" alt="Sedona" alt="Sedona" width="360" height="576">
                     <h3>
                      <a href="#" class="sedona-link">Sedona</a>
                  </h3>
@@ -67,7 +69,7 @@
                 </li>
                 </div>
                 <div class="pink-wrapper">
-                <li> <img src="img/img-pink%201.jpg" alt="Pink App" width="360" height="576">
+                <li class="catalog-item"> <img src="img/img-pink%201.jpg" alt="Pink App" width="360" height="576">
                     <h3>
                      <a href="#" class="pink-link">Pink App</a>
                  </h3>
@@ -78,7 +80,7 @@
                 </li>
                 </div>
                 <div class="borodinsky-wrapper">
-                <li> <img src="img/img-barbershop%201.jpg" alt="Barbershop" width="360" height="576">
+                <li class="catalog-item"> <img src="img/img-barbershop%201.jpg" alt="Barbershop" width="360" height="576">
                     <h3>
                      <a href="#" class="borodinsky-link">Borodinsky</a>
                  </h3>
@@ -89,7 +91,7 @@
                 </li>
                 </div>
                 <div class="mishka-wrapper">
-                <li> <img src="img/img-mishka%201.jpg" alt="Mishka" width="360" height="576">
+                <li class="catalog-item"> <img src="img/img-mishka%201.jpg" alt="Mishka" width="360" height="576">
                     <h3>
                      <a href="#" class="mishka-link">Mishka</a>
                  </h3>
@@ -99,18 +101,18 @@
                     </a>
                 </li>
                 </div>
-                <div class="aplus-wrapper"></div>
-                <li> <img src="img/img-aplus%201.jpg" alt="Aplus" width="360" height="576">
+                <div class="aplus-wrapper">
+                <li class="catalog-item"> <img src="img/img-aplus%201.jpg" alt="Aplus" width="360" height="576">
                     <h3>
                      <a href="#" class="aplus-link">APlus</a>
                  </h3>
                     <p>Сайт образовательной платформы</p>
 
                 </li>
-                </div>
+          </div>
 
                 <div class="kvast-wrapper">
-                <li>
+                <li class="catalog-item">
                     <img src="img/img-kvast%201.jpg" alt="Kvast" width="360" height="576">
                     <h3>
                      <a href="#" class="kvast-link">Kvast</a>
@@ -119,9 +121,18 @@
                     <a href="#">
                         <button type="button" class="button">9 900 Р</button>
                     </a>
+                     </div>
+
+
           </li>
            </div>
             </ul>
+            </div>
+
+      </div>
+      </section>
+
+
             <div class="paging-container">
             <ul>
                 <li> <a>1</a> </li>
@@ -133,27 +144,33 @@
             </section>
     </main>
 <footer class="page-footer main-footer">
-    <section class="contacts">
-      <p>NЁRDS DESIGN STUDIO</p>
-      <p class="contacts-adress"> 191186, Санкт-Петербург,
-        <br> ул. Б. Конюшенная, д. 19/8
-        <br> тел.<a href="tel:+7812275" class="contacts-tel">+7 (812) 275-75-75</a> </p> <a href="#" class="button contacts-button">Напишите нам</a>
-        <img src="img/map%201.jpg" alt="Месторасположение офиса" width="1440" height="416">
-        </section>
-    <section class="footer-social">
-     <div class="container-social">
-      <ul>
-        <li> <a href="https://vk.com" class="social-button">Вконтакте</a> </li>
-        <li> <a href="https://www.facebook.com" class="social-button">Фейсбук</a> </li>
-        <li> <a href="https://www.instagram.com" class="social-button">Инстаграмм</a> </li>
-      </ul>
-      </div>
-      <div class="container-social-text">
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-    </section>
+    <div class="footer-wrapper">
+      <section class="contacts">
+        <p>NЁRDS DESIGN STUDIO</p>
+        <p class="contacts-adress"> 191186, Санкт-Петербург,
+          <br> ул. Б. Конюшенная, д. 19/8
+          <br> тел.<a href="tel:+7812275" class="contacts-tel">+7 (812) 275-75-75</a> </p> <a href="#" class="button contacts-button">Напишите нам</a></section>
+
+      <section class="footer-social">
+
+        <div class="container-social">
+          <ul>
+            <li> <a href="https://vk.com" class="social-button">Вконтакте</a> </li>
+            <li> <a href="https://www.facebook.com" class="social-button">Фейсбук</a> </li>
+            <li> <a href="https://www.instagram.com" class="social-button">Инстаграмм</a> </li>
+          </ul>
+        </div>
+      </section>
+        <section class="container-social-text">
+
+        <div class="container-social-text">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+        </div>
+      </section>
   </footer>
+  </div>
 </body>
 
 </html>
