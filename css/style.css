@@ -758,6 +758,7 @@ img {
 }
 
 
+
 /*Flex Catalog*/
 
 
@@ -1373,10 +1374,12 @@ sorting-container-link3 {
   width: 260px;
   height: 50px;
   border-radius: 3px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  outline: none;
+  border: 0;
 }
 
 .filter-button:hover,
@@ -1492,6 +1495,7 @@ sorting-container-link3 {
 
 .arrows-item {
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .arrows-item:hover,
@@ -1512,7 +1516,7 @@ sorting-container-link3 {
 
 .catalog-item {
   position: relative;
-}
+}S
 
 .catalog-item::before {
   content: "";

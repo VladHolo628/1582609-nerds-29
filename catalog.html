@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <title>Nerds</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet"> </head>
 
 <body class="page-body page-body-container">
   <header class="main-header catalog-header">
     <section>
+<h2 hidden>Навигация</h2>
       <div class="main-navigation-wrapper">
         <nav class="main-navigation">
-          <a href="index.html" class="main-logo"> <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс"> </a>
+          <a aria-label="Логотип нёрдс" href="index.html" class="main-logo"> <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс"> </a>
           <ul class="site-navigation">
             <li><a href="index.html">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
@@ -30,8 +32,9 @@
   <main class="wrapper">
     <div class="catalog-wrapper wrapper">
       <section class="catalog-filter">
+       <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="sum.value=numsum.value">
-          <fielset class="filter-range">
+          <fieldset class="filter-range">
             <legend class="cost">Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
@@ -48,9 +51,9 @@
                   <input type="number" name="max-price" value="15000"> </label>
               </div>
             </div>
-          </fielset>
+          </fieldset>
           <fieldset class="filter-layout">
-            <legend class="filter-title">Сетка:</legend>
+            <legend tabindex="0" class="filter-title">Сетка:</legend>
             <ul class="filter-list filter-list-layout">
               <li class="filter-option filter-radio">
                 <input class=" visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="grid" id="adaptive-grid" checked>
@@ -67,7 +70,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-special">
-            <legend class="filter-title">Особенности:</legend>
+            <legend tabindex="0" class="filter-title">Особенности:</legend>
             <ul class="filter-list filter-list-special">
               <li class="filter-option filter-checkbox">
                 <input class=" visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="feature-slider" checked>
@@ -90,10 +93,10 @@
                 <label for="feature-cart" tabindex="0">Корзина</label>
               </li>
             </ul>
-          </fieldset> <a class="filter-button" href="#">Показать</a> </form>
+          </fieldset><button type="submit" class="filter-button">Показать</button></form>
       </section>
       <section class="sorting-container">
-        <h2 hidden>Каталог шаблонов</h2>
+        <h2 class="visually-hidden">Каталог шаблонов</h2>
         <p>Сортировать:</p>
         <ul class="sorting-list">
           <li> <a href="#" class="sorting-item sorting-container-link1">По цене
@@ -112,43 +115,44 @@
         </div>
       </section>
       <section class="catalog-container">
+       <h2 class="visually-hidden">Товары</h2>
         <ul class="catalog-list">
-          <li class="catalog-item" tabindex="0"> <img src="img/img-sedona%201.jpg" alt="Sedona" width="360" height="576">
+          <li class="catalog-item" tabindex="0"> <img src="img/img-sedona%201.jpg" alt="" width="360" height="576">
             <div class="product-info"> <a href="#" class="sedona-link">Sedona</a>
               <p>Информационный сайт
                 <br> для туристов</p>
               <button type="button" class="button cost-button">9 900 Р </button>
             </div>
           </li>
-          <li class="catalog-item" tabindex="0"> <img src="img/img-pink%201.jpg" alt="Pink App" width="360" height="576">
+          <li class="catalog-item" tabindex="0"> <img src="img/img-pink%201.jpg" alt="" width="360" height="576">
             <div class="product-info"> <a href="#" class="pink-link">Pink App</a>
               <p>Продуктовый лендинг
                 <br>приложения для iOS и Android</p>
               <button type="button" class="button cost-button">9 900 Р</button>
             </div>
           </li>
-          <li class="catalog-item" tabindex="0"> <img src="img/img-barbershop%201.jpg" alt="Barbershop" width="360" height="576">
+          <li class="catalog-item" tabindex="0"> <img src="img/img-barbershop%201.jpg" alt="" width="360" height="576">
             <div class="product-info"> <a href="#" class="borodinsky-link">Borodinsky</a>
               <p>Сайт салона красоты.
-                <br> Для для мужчин</p>
+                <br> Для мужчин</p>
               <button type="button" class="button cost-button">9 900 Р</button>
             </div>
           </li>
-          <li class="catalog-item" tabindex="0"> <img src="img/img-mishka%201.jpg" alt="Mishka" width="360" height="576">
+          <li class="catalog-item" tabindex="0"> <img src="img/img-mishka%201.jpg" alt="" width="360" height="576">
             <div class="product-info"> <a href="#" class="mishka-link">Mishka</a>
               <p>Интернет-магазин
                 <br>вязанных вещей</p>
               <button type="button" class="button cost-button">9 900 Р</button>
             </div>
           </li>
-          <li class="catalog-item" tabindex="0"> <img src="img/img-aplus%201.jpg" alt="Aplus" width="360" height="576">
+          <li class="catalog-item" tabindex="0"> <img src="img/img-aplus%201.jpg" alt="" width="360" height="576">
             <div class="product-info"> <a href="#" class="aplus-link">APlus</a>
               <p>Сайт образовательной платформы</p>
               <button type="button" class="button cost-button">9 900 Р</button>
             </div>
           </li>
-          <li class="catalog-item" tabindex="0"> <img src="img/img-kvast%201.jpg" alt="Kvast" width="360" height="576">
-            <div class="product-info"> <a href="#" class="kvast-link">Kvast</a>
+          <li class="catalog-item" tabindex="0"> <img src="img/img-kvast%201.jpg" alt="" width="360" height="576">
+            <div class="product-info"> <a href="#" class="kvast-link" tabindex="0">Kvast</a>
               <p>Промо-сайт
                 <br>производителя крафтового кваса</p>
               <button type="button" class="button cost-button">9 900 Р</button>
@@ -172,7 +176,7 @@
   <footer class="page-footer main-footer">
     <div class="footer-wrapper">
       <section class="contacts">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602472971117!5m2!1sru!2sru" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602472971117!5m2!1sru!2sru"   style="border:0;" allowfullscreen="" aria-hidden="true"></iframe>
         <h2 hidden>contacts</h2>
         <div class="contacts-wrapper">
           <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
@@ -218,10 +222,10 @@
       <div class="popup-content">
         <div class="popup-header">
           <div class="popup-title">Напишите нам</div>
-          <a href="#" class="popup-close"><img src="img/icons/close-cross.svg" alt="Закрыть" width="21px" height="21px"></a>
+          <a href="#" class="popup-close"><img src="img/icons/close-cross.svg" alt="Закрыть" width="21" height="21"></a>
         </div>
         <div class="popup-text">
-          <form action="get" class="popup-form">
+          <form method="post" class="popup-form" action="https://echo.htmlacademy.ru" oninput="sum.value=numsum.value">
             <fieldset class="user-data">
               <ul class="ud-list">
                 <li class="ud-list-item">
