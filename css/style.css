@@ -182,15 +182,21 @@ img {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+
 }
 
 .add-features {
   font-size: 16px;
   line-height: 24px;
   color: var(--lighten-black);
+  margin: 0;
+  padding: 0;
 }
 
 .features-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--basic-white);
   background-color: var(--red);
   font-size: 16px;
@@ -199,6 +205,7 @@ img {
   height: 50px;
   border-radius: 3px;
   margin-bottom: 80px;
+  margin-top: 27px;
 }
 
 
@@ -1776,4 +1783,101 @@ sorting-container-link3 {
   80% {
     transform: translateX(10px);
   }
+}
+
+
+
+/*Slider*/
+.slider{
+  position: relative;
+  margin-left: 70px;
+
+}
+.slide{
+  display: none;
+}
+.slide-current{
+  display: block;
+}
+.first-slide {
+  position: relative;
+
+}
+.first-slide::after {
+  content: "";
+  position: absolute;
+   left: 390px;
+  top: -62px;
+  width: 760px;
+  height: 431px;
+  background-image: url("../img/nerds-index-slide1.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.second-slide::after {
+  content: "";
+  position: absolute;
+
+   left: 390px;
+  top: -62px;
+  width: 760px;
+  height: 431px;
+  background-image: url("../img/nerds-index-slide2%201.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.third-slide::after {
+  content: "";
+  position: absolute;
+
+   left: 390px;
+  top: -62px;
+  width: 760px;
+  height: 431px;
+  background-image: url("../img/nerds-index-slide3.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.slider-controls {
+  position: absolute;
+  bottom: 15px;
+  left: 571px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 17px;
+  width: 88px;
+  min-height: 18px;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  min-height: 18px;
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .current-button {
+  position: relative;
+}
+
+.slider-controls .current-button::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 4px;
+  top: 4px;
+  background-image: url('../img/slider-circle.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }

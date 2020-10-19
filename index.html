@@ -25,14 +25,41 @@
     </div>
     <section class="features">
       <h2 hidden>Преимущества</h2>
-      <div class="features-wrapper">
-        <p class="main-features">Долго, дорого,
-          <br> скрупулезно.</p>
-        <p class="add-features">Математически выверенный дизайн
-          <br> для вашего сайта или мобильного приложения.</p>
-        <a href="#" class=" button features-link">
-          <p>УЗНАТЬ БОЛЬШЕ</p>
-        </a>
+      <div class="slider">
+        <ul class="slider-list">
+          <li class="first-slide slide slide-current">
+            <p class="main-features">Долго, дорого,
+              <br> скрупулезно.</p>
+            <p class="add-features">Математически выверенный дизайн
+              <br> для вашего сайта или мобильного приложения.</p>
+            <a href="#" class=" button features-link">
+              <p>УЗНАТЬ БОЛЬШЕ</p>
+            </a>
+          </li>
+          <li class="second-slide slide ">
+            <p class="main-features">Любим математику <br>
+              как никто другой.</p>
+            <p class="add-features">Никакого креатива, только математические формулы <br>
+              для расчета идеальных пропорций</p>
+            <a href="#" class=" button features-link">
+              <p>УЗНАТЬ БОЛЬШЕ</p>
+            </a>
+          </li>
+          <li class="third-slide slide">
+            <p class="main-features">Только ночь, <br>
+              только хардкор</p>
+            <p class="add-features">Работать днем, как все? Мы против этого. <br>
+              Ближе к полуночи работа только начинается.</p>
+            <a href="#" class=" button features-link">
+              <p>УЗНАТЬ БОЛЬШЕ</p>
+            </a>
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <button class="first-button current-button" type="button" aria-label="Первый слайд"></button>
+          <button class="second-button" type="button" aria-label="Второй слайд"></button>
+          <button class="third-button" type="button" aria-label="Третий слайд"></button>
+        </div>
       </div>
     </section>
   </header>
@@ -113,7 +140,7 @@
   <footer class="page-footer main-footer">
     <div class="footer-wrapper">
       <section class="contacts">
-       <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602472971117!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" aria-hidden="true" ></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602472971117!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="true"></iframe>
         <h2 hidden>contacts</h2>
         <div class="contacts-wrapper">
           <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
@@ -157,9 +184,9 @@
   <div class="popup">
     <div class="popup-body">
       <div class="popup-content">
-       <div class="popup-header">
-        <div class="popup-title">Напишите нам</div>
-        <a href="#" class="popup-close"><img src="img/icons/close-cross.svg" alt="Закрыть" width="21" height="21"></a>
+        <div class="popup-header">
+          <div class="popup-title">Напишите нам</div>
+          <a href="#" class="popup-close"><img src="img/icons/close-cross.svg" alt="Закрыть" width="21" height="21"></a>
         </div>
         <div class="popup-text">
           <form method="post" class="popup-form" action="https://echo.htmlacademy.ru" oninput="sum.value=numsum.value">
@@ -170,7 +197,7 @@
                   <input placeholder="Имя Фамилия" id="user-name-popup" name="user-name" type="text" class="user-name-input popup-form-item"> </li>
                 <li class="ud-list-item">
                   <label for="user-mail-popup" class="user-name-title">Ваш email:</label>
-                  <input  placeholder="email@example.com" id="user-mail-popup" name="user-email" type="email" class="user-email-input popup-form-item"> </li>
+                  <input placeholder="email@example.com" id="user-mail-popup" name="user-email" type="email" class="user-email-input popup-form-item"> </li>
               </ul>
             </fieldset>
             <fieldset class="user-message">
