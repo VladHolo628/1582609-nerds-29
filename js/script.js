@@ -1,5 +1,5 @@
 
-const popupOpenButton = document.querySelector(".contacts-button");
+const popupOpenButton = document.querySelector('.contacts-button');
 const popup = document.querySelector('.popup');
 const popupCloseButton = popup.querySelector('.popup-close');
 const popupName = popup.querySelector('.user-name-input');
