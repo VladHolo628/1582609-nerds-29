@@ -5,6 +5,11 @@ const popupCloseButton = popup.querySelector('.popup-close');
 const popupName = popup.querySelector('.user-name-input');
 const popupEmail = popup.querySelector('.user-email-input');
 const popupForm = popup.querySelector('.popup-form');
+const input = document.querySelector('input');
+
+input.oninput = function(){
+  result.innerHTML = input.value;
+};
 
 
 
